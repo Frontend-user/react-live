@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 import "./styles.css";
 
-export function App() {
-  return <Comments />;
-}
-
 const initialComments = ["comment1", "comment2", "comment3"];
 
 interface CommentEditorProps {
@@ -90,3 +86,7 @@ export const Comments = () => {
     </div>
   );
 };
+
+export function App() {
+  return <Comments />;
+}
